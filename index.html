@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- GG Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- video -->
+    <link rel="stylesheet" href="./css/videopopup.css">
+    <!-- LBS -->
+    <link rel="stylesheet" href="./css/lsb.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HEader -->
+    <header id="myHeader">
+        <div class="header__content">
+            <a href="" class="header__logo">
+                Hous<span>ing</span>
+            </a>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Agents</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End header -->
+    <!-- carousel -->
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/b1.jpg" />
+                <div class="carousel__overlay">
+                    <h4>LOREM IPSUM AMET</h4>
+                    <p>Lorem ipsum dolor sit, consectetur adiping elit.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/b2.jpg" />
+                <div class="carousel__overlay">
+                    <h4>DOLOR SIT HATANT MORBI</h4>
+                    <p>Quis autem vel eum iure reprehenderit quivol.</p>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/b3.jpg" />
+                <div class="carousel__overlay">
+                    <h4>QUIS AUTEM VE EUM IURE</h4>
+                    <p>Excepteur sint ocecat cupid proident, deserunt.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/b4.jpg" />
+                <div class="carousel__overlay">
+                    <h4>VOLUPTATE VELIT ESSE</h4>
+                    <p>Quis autem velreprehenderit qui ea.eum iure</p>
+                </div>
+            </div>
+        </div>
+        <div class="button-next"></div>
+        <div class="button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- ENd carousel -->
+    <!-- About -->
+    <section class="about">
+        <p class="title">About</p>
+        <div class="about__content">
+            <div class="about__item">
+                <i class="fa fa-home"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
+            </div>
+            <div class="about__item">
+                <i class="fa fa-key"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
+            </div>
+            <div class="about__item">
+                <i class="fa fa-money-bill-alt"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="about__text">
+            <h3>About us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed odio consequat, tristique elit sed, molestie nulla. Mauris et quam leo. Quisque tincidunt facilisis rutrum. Etiam mattis arcu vitae velit sagittis vehicula. Duis posuere ex
+                in mollis iaculis. Suspendisse tincidunt ut velit id euismod.vulputate turpis porta ex sodales, dignissim hendrerit eros sagittis. Curabitur lacinia dui ut luctus congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis</p>
+        </div>
+    </section>
+    <!-- End About -->
+    <!-- Stats -->
+    <section class="stats">
+        <p class="title title--black">Stats</p>
+        <div class="stats__content">
+            <div class="stats__item">
+                <p class="counter">3500</p>
+                <p>Clients</p>
+            </div>
+            <div class="stats__item">
+                <p class="counter">650</p>
+                <p>Plans</p>
+            </div>
+            <div class="stats__item">
+                <p class="counter">1021</p>
+                <p>Projects</p>
+            </div>
+            <div class="stats__item">
+                <p class="counter">1010</p>
+                <p>Likes</p>
+            </div>
+        </div>
+    </section>
+    <!-- End Stats -->
+    <!-- Blog -->
+    <section class="blog">
+        <p class="title title--blog"> Blog</p>
+        <div class="blog__content">
+            <div class="blog__item">
+                <img src="./images/g1.jpg" alt="">
+                <div class="blog__text">
+                    <span><a href="">Lorem Ipsum Passage,</a></span>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                    <button class="btn_blog"><a data-toggle="modal" data-target="#myModal" href="">Read More..</a></button>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header ">
+                                    <p>Housing</p>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true"> x</span> </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img__modal" src="./images/img2.jpg" alt="">
+                                    <p class="text__modal">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+                                        consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog__item">
+                <img src="./images/g2.jpg" alt="">
+                <div class="blog__text">
+                    <span><a href="">Lorem Ipsum Passage,</a></span>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                    <button class="btn_blog"><a data-toggle="modal" data-target="#myModal" href="">Read More..</a></button>
+                    <div class="modal fade " id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header ">
+                                    <p>Housing</p>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true"> x</span> </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img__modal" src="./images/img2.jpg" alt="">
+                                    <p class="text__modal">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+                                        consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog__item">
+                <img src="./images/g1.jpg" alt="">
+                <div class="blog__text">
+                    <span><a href="">Lorem Ipsum Passage,</a></span>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                    <button class="btn_blog"><a data-toggle="modal" data-target="#myModal" href="">Read More..</a></button>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header ">
+                                    <p>Housing</p>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true"> x</span> </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img__modal" src="./images/img2.jpg" alt="">
+                                    <p class="text__modal">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+                                        consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Blog -->
+    <!-- Video -->
+    <section class="video">
+        <div class="video__content">
+            <div class="video__left">
+                <img src="./images/video.jpg" alt="">
+                <a href="#small-dialog1" class="play-icon popup-with-zoom-anim"><span  aria-hidden="true"><i class="fa fa-play-circle"></i></span>></a>
+                <div id="small-dialog1" class="w3ls_small_dialog wthree_pop mfp-hide">
+                    <div class="agileits_modal_body">
+                        <iframe src="https://player.vimeo.com/video/106770833"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video__text">
+                <p class="title title--video">Get More..</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut minim veniam, labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi esse quam nihil molestiae
+                    consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. </p>
+                <button class="btn_blog"><a data-toggle="modal" data-target="#myModal" href="">Read More..</a></button>
+                <div class="modal fade " id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header ">
+                                <p>Housing</p>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true"> x</span> </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="img__modal" src="./images/img2.jpg" alt="">
+                                <p class="text__modal">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+                                    consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End video -->
+    <!-- Portfolio -->
+    <section class="portfolio">
+        <p class="title">Portfolio</p>
+        <div class="portfolio__content">
+            <div class="portfolio__item">
+                <a href="./images/img1.jpg" class="lsb-preview" data-lsb-group="header"><img src="./images/img1.jpg" alt="">
+                    <div class="over__lay ">
+                        <h3>GALLERY</h3>
+                        <p>Lorem Ipsum is simply dummy</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio__item">
+                <a href="./images/img2.jpg" class="lsb-preview" data-lsb-group="header"><img src="./images/img2.jpg" alt="">
+                    <div class="over__lay">
+                        <h3>GALLERY</h3>
+                        <p>Lorem Ipsum is simply dummy</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio__item">
+                <a href="./images/img3.jpg" class="lsb-preview" data-lsb-group="header"><img src="./images/img3.jpg" alt="">
+                    <div class="over__lay">
+                        <h3>GALLERY</h3>
+                        <p>Lorem Ipsum is simply dummy</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio__item">
+                <a href="./images/img4.jpg" class="lsb-preview" data-lsb-group="header"><img src="./images/img4.jpg" alt="">
+                    <div class="over__lay">
+                        <h3>GALLERY</h3>
+                        <p>Lorem Ipsum is simply dummy</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio__item">
+                <a href="./images/img5.jpg" class="lsb-preview" data-lsb-group="header"><img src="./images/img5.jpg" alt="">
+                    <div class="over__lay">
+                        <h3>GALLERY</h3>
+                        <p>Lorem Ipsum is simply dummy</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio__item">
+                <a href="./images/img6.jpg" class="lsb-preview" data-lsb-group="header"><img src="./images/img6.jpg" alt="">
+                    <div class="over__lay">
+                        <h3>GALLERY</h3>
+                        <p>Lorem Ipsum is simply dummy</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio -->
+    <!-- subscribe -->
+    <section class="subscribe">
+        <p class="title">Subscribe</p>
+        <div class="subscribe__content">
+            <p>consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Ut enim ad minim <br/> veniam, quis nostrud exercitation ullamco laboris nisi</p>
+            <input type="email" placeholder="Email">
+            <button class="btn--click">Click</button>
+        </div>
+    </section>
+    <!-- End Subscribe -->
+    <!-- Our -->
+    <section class="our">
+        <p class="title">Our Agents</p>
+        <div class="our__content">
+            <div class="our__item">
+                <img src="./images/t1.jpg" alt="">
+                <div class="our__item__text">
+                    <h4>KAT WALLY</h4>
+                    <p>Lorem Ipsum</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li><a href=""><i class="fa fa-rss"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="our__item">
+                <img src="./images/t4.jpg" alt="">
+                <div class="our__item__text">
+                    <h4>JOHN MAX</h4>
+                    <p>Lorem Ipsum</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li><a href=""><i class="fa fa-rss"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="our__item">
+                <img src="./images/t2.jpg" alt="">
+                <div class="our__item__text">
+                    <h4>ROY KENT</h4>
+                    <p>Lorem Ipsum</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li><a href=""><i class="fa fa-rss"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="our__item">
+                <img src="./images/t3.jpg" alt="">
+                <div class="our__item__text">
+                    <h4>JOY IDSON</h4>
+                    <p>Lorem Ipsum</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li><a href=""><i class="fa fa-rss"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our -->
+    <!-- Map -->
+    <section class="map">
+        <div class="map__content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5097522332107!2d106.67765461462241!3d10.772215392324355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fca39e3b493%3A0x865af6a617c57d82!2sCyberSoft%20Academy!5e0!3m2!1svi!2s!4v1620188014672!5m2!1svi!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <!-- End Map -->
+    <!-- Contact -->
+    <section class="contact">
+        <p class="title title--contact">Contact Us</p>
+        <div class="contact__content">
+            <form action="#">
+
+                <input type="text" placeholder="Name">
+                <textarea class="input__mess" name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
+
+                <input type="email" placeholder="Email">
+                <input type="number" placeholder="Phone">
+                <input type="text" placeholder="Last Name">
+
+                <input type="button" value="Submit" class="btn--contact">
+
+
+            </form>
+        </div>
+    </section>
+    <!-- End Contact -->
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer__content">
+            <p>© 2017 Housing. All Rights Reserved | Design by <span>W3layouts</span></p>
+            <ul>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-rss"></i></a></li>
+                <li><a href=""><i class="fab fa-vk"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- End Footer -->
+    <!-- Back to top -->
+    <a href="" class="backToTop cd-top text-replace js-cd-top">
+        <img src="./images/arrowup.png" alt="">
+    </a>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <!-- End JQuery -->
+
+
+    <!-- Count -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous"></script>
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+    <!-- End Count -->
+    <!-- LBS -->
+    <script src="./js/lsb.min.js"></script>
+    <script>
+        $(window).on('load', function() {
+            $.fn.lightspeedBox();
+        });
+    </script>
+
+
+    <!-- End LBS -->
+    <!-- Video -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".popup-with-zoom-anim").magnificPopup({
+                type: "inline",
+                fixedContentPos: false,
+                fixedBgPos: true,
+                overflowY: "auto",
+                closeBtnInside: true,
+                preloader: false,
+                midClick: true,
+                removalDelay: 300,
+                mainClass: "my-mfp-zoom-in"
+            });
+        });
+    </script>
+    <!-- End Video -->
+    <!-- Back to top -->
+    <script src="./js/util.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var mySwiper = new Swiper(".swiper-container", {
+
+            loop: true,
+            effect: "fade",
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev"
+            },
+
+            // // And
+            // // if we need scrollbar
+            // scrollbar: {
+            //     el: ".swiper-scrollbar"
+            // }
+        });
+    </script>
+    <!-- Fixed heder -->
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
