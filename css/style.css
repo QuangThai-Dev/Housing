@@ -473,14 +473,14 @@ header {
 .video__left span {
     position: absolute;
     top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
     color: #fff;
 }
 
-.video__left span i {
+.video__left span {
     background: rgba(0, 189, 189, 0.53);
     font-size: 40px;
     width: 80px;
